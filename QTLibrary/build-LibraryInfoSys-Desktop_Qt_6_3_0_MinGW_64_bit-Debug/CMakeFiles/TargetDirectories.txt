@@ -1,0 +1,5 @@
+C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/CMakeFiles/LibraryInfoSys.dir
+C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/CMakeFiles/LibraryInfoSys_autogen_timestamp_deps.dir
+C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/CMakeFiles/LibraryInfoSys_autogen.dir

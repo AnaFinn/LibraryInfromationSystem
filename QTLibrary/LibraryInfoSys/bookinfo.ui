@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookInfo</class>
+ <widget class="QMainWindow" name="BookInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>694</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>310</y>
+      <width>136</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>136</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color:white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #0F7C8A;
+;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bookPictureLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>235</width>
+      <height>317</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>235</width>
+      <height>317</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>310</y>
+      <width>136</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>136</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(197, 125, 43);
+ border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #D68243;</string>
+    </property>
+    <property name="text">
+     <string>Request</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>694</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

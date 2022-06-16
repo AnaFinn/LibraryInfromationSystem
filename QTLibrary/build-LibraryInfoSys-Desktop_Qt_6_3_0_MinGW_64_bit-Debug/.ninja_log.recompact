@@ -1,0 +1,12 @@
+# ninja log v5
+298	2935	6768225870575016	CMakeFiles/LibraryInfoSys.dir/bookinfodialog.cpp.obj	758a3b0a1df431a0
+6	662	6768299630520204	LibraryInfoSys_autogen/timestamp	8ce112442b5329b2
+6	662	6768299630520204	LibraryInfoSys_autogen/mocs_compilation.cpp	8ce112442b5329b2
+6	662	6768299630520204	C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/LibraryInfoSys_autogen/timestamp	8ce112442b5329b2
+6	662	6768299630520204	C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/LibraryInfoSys_autogen/mocs_compilation.cpp	8ce112442b5329b2
+765	3777	6768230596259479	CMakeFiles/LibraryInfoSys.dir/LibraryInfoSys_autogen/mocs_compilation.cpp.obj	289576c9fbd1bb75
+848	3716	6768225050303797	CMakeFiles/LibraryInfoSys.dir/main.cpp.obj	dfd53e2bdb95dd2b
+359	3561	6768231522096946	CMakeFiles/LibraryInfoSys.dir/mainwindow.cpp.obj	29a8a75fcf7c003c
+3138	3527	6768225876537588	LibraryInfoSys.exe	70bd75adf826548
+2	438	6768299625084113	build.ninja	543316d77fee3cbc
+341	2972	6768231516243361	CMakeFiles/LibraryInfoSys.dir/bookinfo.cpp.obj	2fc0c78795e46f36

@@ -1,0 +1,11 @@
+debug/bookinfowidget.o
+debug/landingwidget.o
+debug/librarydatabase.o
+debug/main.o
+debug/mainwindow.o
+debug/signupwidget.o
+debug/moc_bookinfowidget.o
+debug/moc_landingwidget.o
+debug/moc_librarydatabase.o
+debug/moc_mainwindow.o
+debug/moc_signupwidget.o

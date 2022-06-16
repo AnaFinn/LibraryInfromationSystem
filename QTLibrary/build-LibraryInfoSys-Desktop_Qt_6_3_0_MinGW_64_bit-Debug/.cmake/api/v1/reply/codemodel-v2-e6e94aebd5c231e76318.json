@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LibraryInfoSys",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LibraryInfoSys::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibraryInfoSys-Debug-e0b9c8cb18076fe0a0c8.json",
+					"name" : "LibraryInfoSys",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LibraryInfoSys_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibraryInfoSys_autogen-Debug-3e2bbf3f4607d6796ffd.json",
+					"name" : "LibraryInfoSys_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LibraryInfoSys_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibraryInfoSys_autogen_timestamp_deps-Debug-6503b3daa490785430da.json",
+					"name" : "LibraryInfoSys_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/build-LibraryInfoSys-Desktop_Qt_6_3_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/karpo/Desktop/Library_Info_Sys/QTLibrary/LibraryInfoSys"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
