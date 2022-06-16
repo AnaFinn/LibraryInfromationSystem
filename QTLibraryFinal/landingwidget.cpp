@@ -7,8 +7,9 @@ LandingWidget::LandingWidget(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->pswdLineEdit->setPlaceholderText("Enter your full name");
+
     ui->mailLineEdit->setPlaceholderText("Enter your email addres");
+    ui->pswdLineEdit->setPlaceholderText("Enter your password");
 
     connect(ui->loginButton,SIGNAL(clicked()),this,SLOT(logInValidation()));
     connect(ui->signUpButton,SIGNAL(clicked()),this,SLOT(signUpClicked()));
@@ -41,10 +42,10 @@ void LandingWidget::logInValidation()
         return;
     }
     QString name,pass,email;int type=0;
-    name=ui->mailLineEdit->text();
+    email=ui->mailLineEdit->text();
     pass=ui->pswdLineEdit->text();
     if(ui->memberRadioButton->isChecked())type=1;
     if(ui->adminRadiButton->isChecked())type=2;
 
-    emit logInData(name,pass,email, type);
+    libraryDatabase->logInDataBase(email,pass, type);
 }

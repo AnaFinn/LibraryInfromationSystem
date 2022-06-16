@@ -10,6 +10,7 @@
 #include <QString>
 #include <QtSql>
 #include <QSqlDatabase>
+#include "librarydatabase.h"
 
 namespace Ui {
 class LandingWidget;
@@ -38,6 +39,7 @@ private slots:
 
 private:
     Ui::LandingWidget *ui;
+    LibraryDataBase *libraryDatabase;
 };
 
 #endif // LANDINGWIDGET_H

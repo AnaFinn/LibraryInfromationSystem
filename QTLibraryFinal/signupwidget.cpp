@@ -47,7 +47,7 @@ void SignUpWidget::signUpValidation()
     if(ui->memberRadioButton->isChecked())type=1;
     if(ui->adminRadiButton->isChecked())type=2;
 
-    libraryDatabase->signUpDataBase(name,email,pass,type);
+    libraryDatabase->signUpDataBase(name,pass,email,type);
     //emit signUpData(name,email,pass,type);
 
 }

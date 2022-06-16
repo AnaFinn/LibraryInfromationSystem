@@ -6,6 +6,7 @@
 #include <QtSql>
 #include <QSqlDatabase>
 #include <QDebug>
+#include <QSqlQuery>
 #include <QMessageBox>
 
 class LibraryDataBase : public QObject
@@ -14,8 +15,9 @@ class LibraryDataBase : public QObject
 public:
     explicit LibraryDataBase(QObject *parent = nullptr);
     void signUpDataBase(QString name, QString pswd, QString email, int n);
+    void logInDataBase(QString email, QString pswd, int n);
 private:
-    //QSqlDatabase db;
+    //QSqlDatabase myDB;
 
 
 
