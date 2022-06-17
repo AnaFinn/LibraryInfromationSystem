@@ -10,7 +10,6 @@
 #include <QString>
 #include <QtSql>
 #include <QSqlDatabase>
-#include <QDebug>
 #include "landingwidget.h"
 #include "librarydatabase.h"
 

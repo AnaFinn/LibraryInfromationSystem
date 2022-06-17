@@ -5,6 +5,7 @@
 #include "landingwidget.h"
 #include "signupwidget.h"
 #include "librarydatabase.h"
+#include "memberwidget.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,6 +24,7 @@ private slots:
     void on_pushButton_clicked();
     void signUpPage();
     void logInPage();
+    void memberPage();
 
 private:
     Ui::MainWindow *ui;
@@ -30,6 +32,7 @@ private:
     LandingWidget landingWidget;
     SignUpWidget signUpWidget;
     LibraryDataBase libraryDataBase;
+    MemberWidget memberWidget;
 };
 
 #endif // MAINWINDOW_H

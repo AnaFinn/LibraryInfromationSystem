@@ -8,31 +8,31 @@
 #include <QDebug>
 #include <QSqlQuery>
 #include <QMessageBox>
+#include "user.h"
 
 class LibraryDataBase : public QObject
 {
     Q_OBJECT
+
 public:
     explicit LibraryDataBase(QObject *parent = nullptr);
-    void signUpDataBase(QString name, QString pswd, QString email, int n);
-    void logInDataBase(QString email, QString pswd, int n);
 private:
-    //QSqlDatabase myDB;
 
-
-
+    User *user;
+    Member *member;
 public slots:
+    void signUpDataBase(QString name, QString pswd, QString email, int n);
+    void logInDataBase(QString name, QString email, QString pswd, int n);
 
-    //void log_in(QString name , QString password , int choice);
-    // publisher
-  //  void Upload_book(QString ,QString,QString,int);
-   // void updateAdmin(QString ,QString,QString,QString,int);
-    //void updateMember(QString,QString,QString,QString,int);
+
 signals:
-    //void error(string);
-    //void error_login(QString);
-    //void studentLoggedin(Student);
-    //void publisherLoggedin(Publisher);
+
+    //void memberLoggedin();
+    //void adminLoggedin();
+private:
+
+QString username, mail, password;
+
 
 };
 

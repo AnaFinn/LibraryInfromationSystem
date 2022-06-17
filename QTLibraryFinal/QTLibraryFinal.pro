@@ -14,19 +14,24 @@ SOURCES += \
     librarydatabase.cpp \
     main.cpp \
     mainwindow.cpp \
-    signupwidget.cpp
+    memberwidget.cpp \
+    signupwidget.cpp \
+    user.cpp
 
 HEADERS += \
     bookinfowidget.h \
     landingwidget.h \
     librarydatabase.h \
     mainwindow.h \
-    signupwidget.h
+    memberwidget.h \
+    signupwidget.h \
+    user.h
 
 FORMS += \
     bookinfowidget.ui \
     landingwidget.ui \
     mainwindow.ui \
+    memberwidget.ui \
     signupwidget.ui
 
 # Default rules for deployment.

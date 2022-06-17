@@ -15,6 +15,7 @@ LibraryDataBase::LibraryDataBase(QObject *parent)
 //    }
 //    qDebug()<<"database class is accessed";
 
+
 }
 
 
@@ -97,10 +98,11 @@ void LibraryDataBase::signUpDataBase(QString name, QString pswd, QString email, 
     }
 }
 
-void LibraryDataBase::logInDataBase(QString email, QString pswd, int n)
+void LibraryDataBase::logInDataBase(QString name, QString email, QString pswd, int n)
 {
     QMessageBox mb;
     QSqlDatabase myDB;
+
     qDebug()<<"database class login function is accessed";
     myDB=QSqlDatabase::addDatabase("QSQLITE");
     myDB.setDatabaseName("C:/Users/karpo/Desktop/Library_Info_Sys/build-QTLibraryFinal-Desktop_Qt_6_3_0_MinGW_64_bit-Debug/database.db");
@@ -118,11 +120,15 @@ void LibraryDataBase::logInDataBase(QString email, QString pswd, int n)
         {
             qry.exec("SELECT * FROM members");
 
+            qry.bindValue(":name", name);
             qry.bindValue(":password", pswd);
             qry.bindValue(":email", email);
 
+
             int pswdNo = qry.record().indexOf("password");
             int emailNo = qry.record().indexOf("email");
+            int nameNo = qry.record().indexOf("name");
+
             qDebug()<<qry.isSelect();
             qDebug()<<qry.record().indexOf("email");
             qDebug()<<qry.record().indexOf("password");
@@ -134,21 +140,21 @@ void LibraryDataBase::logInDataBase(QString email, QString pswd, int n)
                 qDebug()<<qry.size();
                  while (qry.next())
                  {
-
+                     QString nameFromDB = qry.value(nameNo).toString();
                      QString emailFromDB = qry.value(emailNo).toString();
                      QString passwordFromDB =  qry.value(pswdNo).toString();
-                     qDebug()<<qry.value(pswdNo).toString();
+                     //QString nameFromDB =  qry.value(nameNo).toString();
+
 
                      if(emailFromDB==email && passwordFromDB==pswd)
                      {
-
-//                         mb.setText("Login Success ");
-//                         mb.exec();
-
+                         mb.setText("Login Success ");
+                         mb.exec();
+                         member->setName(emailFromDB);
+                         break;
                      }
 
                  }
-
 
             }
             else
@@ -159,15 +165,18 @@ void LibraryDataBase::logInDataBase(QString email, QString pswd, int n)
             }
 
         }
+
         else if (n==2)
         {
             qry.exec("SELECT * FROM admin");
 
             qry.bindValue(":password", pswd);
             qry.bindValue(":email", email);
+            //qry.bindValue(":name", name);
 
             int pswdNo = qry.record().indexOf("password");
             int emailNo = qry.record().indexOf("email");
+            //int nameNo = qry.record().indexOf("name");
             qDebug()<<qry.isSelect();
             qDebug()<<qry.record().indexOf("email");
             qDebug()<<qry.record().indexOf("password");
@@ -182,13 +191,15 @@ void LibraryDataBase::logInDataBase(QString email, QString pswd, int n)
 
                      QString emailFromDB = qry.value(emailNo).toString();
                      QString passwordFromDB =  qry.value(pswdNo).toString();
-                     qDebug()<<qry.value(pswdNo).toString();
+                     //QString nameFromDB=qry.value(nameNo).toString();
+                     //qDebug()<<qry.value(nameNo).toString();
 
                      if(emailFromDB==email && passwordFromDB==pswd)
                      {
 
                          mb.setText("Login Success ");
                          mb.exec();
+
 
                      }
 
@@ -205,4 +216,7 @@ void LibraryDataBase::logInDataBase(QString email, QString pswd, int n)
 
         }
     }
+
 }
+
+

@@ -41,11 +41,12 @@ void LandingWidget::logInValidation()
         msgBox.exec();
         return;
     }
-    QString name,pass,email;int type=0;
+    QString pass,name, email;int type=0;
     email=ui->mailLineEdit->text();
     pass=ui->pswdLineEdit->text();
     if(ui->memberRadioButton->isChecked())type=1;
     if(ui->adminRadiButton->isChecked())type=2;
 
-    libraryDatabase->logInDataBase(email,pass, type);
+    libraryDatabase->logInDataBase(name, email, pass, type);
+    emit memberLoggedIn();
 }

@@ -28,13 +28,14 @@ public:
 
 signals:
     void logInData(QString name, QString pswd, QString email, int n);
+    void memberLoggedIn();
     void signUpMove();
 
 public slots:
-    void logInValidation();
+
 
 private slots:
-
+    void logInValidation();
     void signUpClicked();
 
 private:

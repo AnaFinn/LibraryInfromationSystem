@@ -3,9 +3,12 @@ debug/landingwidget.o
 debug/librarydatabase.o
 debug/main.o
 debug/mainwindow.o
+debug/memberwidget.o
 debug/signupwidget.o
+debug/user.o
 debug/moc_bookinfowidget.o
 debug/moc_landingwidget.o
 debug/moc_librarydatabase.o
 debug/moc_mainwindow.o
+debug/moc_memberwidget.o
 debug/moc_signupwidget.o
