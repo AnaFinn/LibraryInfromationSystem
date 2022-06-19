@@ -5,7 +5,6 @@ release/main.o
 release/mainwindow.o
 release/memberwidget.o
 release/signupwidget.o
-release/user.o
 release/moc_bookinfowidget.o
 release/moc_landingwidget.o
 release/moc_librarydatabase.o

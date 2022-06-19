@@ -15,8 +15,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     memberwidget.cpp \
-    signupwidget.cpp \
-    user.cpp
+    signupwidget.cpp
 
 HEADERS += \
     bookinfowidget.h \
@@ -24,8 +23,7 @@ HEADERS += \
     librarydatabase.h \
     mainwindow.h \
     memberwidget.h \
-    signupwidget.h \
-    user.h
+    signupwidget.h
 
 FORMS += \
     bookinfowidget.ui \

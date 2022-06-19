@@ -12,6 +12,8 @@
 #include <QSqlDatabase>
 #include "librarydatabase.h"
 
+
+
 namespace Ui {
 class LandingWidget;
 }
@@ -27,7 +29,7 @@ public:
 
 
 signals:
-    void logInData(QString name, QString pswd, QString email, int n);
+//    void logInData(QString name, QString pswd, QString email, int n);
     void memberLoggedIn();
     void signUpMove();
 
@@ -41,6 +43,10 @@ private slots:
 private:
     Ui::LandingWidget *ui;
     LibraryDataBase *libraryDatabase;
+
+
+
+
 };
 
 #endif // LANDINGWIDGET_H

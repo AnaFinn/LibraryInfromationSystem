@@ -8,7 +8,9 @@
 #include <QDebug>
 #include <QSqlQuery>
 #include <QMessageBox>
-#include "user.h"
+#include <QTableView>
+
+
 
 class LibraryDataBase : public QObject
 {
@@ -17,12 +19,37 @@ class LibraryDataBase : public QObject
 public:
     explicit LibraryDataBase(QObject *parent = nullptr);
 private:
+    QString username;
+    QString bookname;
+    QString bookauthor;
+    QString bookdescription;
 
-    User *user;
-    Member *member;
 public slots:
     void signUpDataBase(QString name, QString pswd, QString email, int n);
+    void setUsername(QString currentuser);
+    QString getUsername();
+    void showAllUsers();
     void logInDataBase(QString name, QString email, QString pswd, int n);
+//  void addBookDataBase(QString name, QString author, QString description);
+    void showAllBookDataBase();
+    void setBookName(QString name);
+    QString getBookName();
+    void setBookAuthor(QString name);
+    QString getBookAuthor();
+    void setBookDescription(QString name);
+    QString getBookDescription();
+    void findBookByName(QString nameBook);
+
+    void editUsersTable(QTableView *table);
+    void printDataBase(QTableView *table, QString type);
+
+    void requestBook(QString email, QString bookName);
+
+    //void getBookAuthor();
+    //void getBookDescription();
+//    void deleteBookDataBase(QString name, QString author, QString description);
+//    void editBookDataBase(QString name, QString author, QString description);
+private slots:
 
 
 signals:
@@ -31,7 +58,7 @@ signals:
     //void adminLoggedin();
 private:
 
-QString username, mail, password;
+
 
 
 };

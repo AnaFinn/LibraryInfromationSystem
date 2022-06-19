@@ -5,7 +5,6 @@ debug/main.o
 debug/mainwindow.o
 debug/memberwidget.o
 debug/signupwidget.o
-debug/user.o
 debug/moc_bookinfowidget.o
 debug/moc_landingwidget.o
 debug/moc_librarydatabase.o

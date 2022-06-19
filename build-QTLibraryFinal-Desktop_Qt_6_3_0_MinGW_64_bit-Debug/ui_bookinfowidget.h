@@ -18,12 +18,17 @@ QT_BEGIN_NAMESPACE
 class Ui_BookInfoWidget
 {
 public:
+    QWidget *widget;
 
     void setupUi(QWidget *BookInfoWidget)
     {
         if (BookInfoWidget->objectName().isEmpty())
             BookInfoWidget->setObjectName(QString::fromUtf8("BookInfoWidget"));
-        BookInfoWidget->resize(701, 454);
+        BookInfoWidget->resize(960, 650);
+        widget = new QWidget(BookInfoWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(60, 90, 261, 441));
+        widget->setStyleSheet(QString::fromUtf8("background-color:white;"));
 
         retranslateUi(BookInfoWidget);
 

@@ -9,7 +9,9 @@
 #include <QString>
 #include <QtSql>
 #include <QSqlDatabase>
+#include <QSqlQueryModel>
 #include "librarydatabase.h"
+
 
 
 namespace Ui {
@@ -24,14 +26,31 @@ public:
     explicit MemberWidget(QWidget *parent = nullptr);
     ~MemberWidget();
 
+public slots:
+
+
+
+private slots:
+    void on_browsePushButton_clicked();
+
+    void on_browsePushButton_2_clicked();
+
+    void on_searchButton_clicked();
+
+    void on_hobbitButton_clicked();
+
+    void on_requestButton_clicked();
+
 private:
     Ui::MemberWidget *ui;
-    QString currentMember;
+    //QString usernameCurrent;
+
+//QString usernameCurrent;
     LibraryDataBase librarydatabase;
 
 
-public slots:
-    //void memberLoggedIn(QString email);
+
+
 };
 
 #endif // MEMBERWIDGET_H

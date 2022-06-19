@@ -12,9 +12,11 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -49,17 +51,27 @@ public:
     QWidget *widget_6;
     QWidget *widget_7;
     QWidget *widget_8;
+    QTableView *tableView;
+    QWidget *bookInfoWidget;
+    QWidget *widget_11;
+    QLabel *bookNameLabel;
+    QLabel *bookAuthorLabel;
+    QLabel *bookDescLabel;
+    QPushButton *requestButton;
+    QPushButton *cancelButton;
     QWidget *widget_9;
     QLineEdit *searchLineEdit;
     QLabel *userNameLabel;
+    QPushButton *searchButton;
     QPushButton *browsePushButton;
     QPushButton *yourBooksPushButton;
+    QPushButton *browsePushButton_2;
 
     void setupUi(QWidget *MemberWidget)
     {
         if (MemberWidget->objectName().isEmpty())
             MemberWidget->setObjectName(QString::fromUtf8("MemberWidget"));
-        MemberWidget->resize(960, 650);
+        MemberWidget->resize(960, 665);
         groupBox_2 = new QGroupBox(MemberWidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(210, 50, 691, 621));
@@ -217,6 +229,32 @@ public:
         widget_8->setGeometry(QRect(210, 360, 111, 151));
         widget_8->setStyleSheet(QString::fromUtf8("background-color: white\n"
 ""));
+        tableView = new QTableView(groupBox_2);
+        tableView->setObjectName(QString::fromUtf8("tableView"));
+        tableView->setGeometry(QRect(0, 10, 751, 601));
+        bookInfoWidget = new QWidget(groupBox_2);
+        bookInfoWidget->setObjectName(QString::fromUtf8("bookInfoWidget"));
+        bookInfoWidget->setGeometry(QRect(10, 20, 761, 361));
+        bookInfoWidget->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        widget_11 = new QWidget(bookInfoWidget);
+        widget_11->setObjectName(QString::fromUtf8("widget_11"));
+        widget_11->setGeometry(QRect(40, 30, 211, 301));
+        widget_11->setStyleSheet(QString::fromUtf8("background-color:black;"));
+        bookNameLabel = new QLabel(bookInfoWidget);
+        bookNameLabel->setObjectName(QString::fromUtf8("bookNameLabel"));
+        bookNameLabel->setGeometry(QRect(280, 30, 181, 31));
+        bookAuthorLabel = new QLabel(bookInfoWidget);
+        bookAuthorLabel->setObjectName(QString::fromUtf8("bookAuthorLabel"));
+        bookAuthorLabel->setGeometry(QRect(280, 70, 181, 31));
+        bookDescLabel = new QLabel(bookInfoWidget);
+        bookDescLabel->setObjectName(QString::fromUtf8("bookDescLabel"));
+        bookDescLabel->setGeometry(QRect(280, 110, 421, 161));
+        requestButton = new QPushButton(bookInfoWidget);
+        requestButton->setObjectName(QString::fromUtf8("requestButton"));
+        requestButton->setGeometry(QRect(450, 300, 83, 29));
+        cancelButton = new QPushButton(bookInfoWidget);
+        cancelButton->setObjectName(QString::fromUtf8("cancelButton"));
+        cancelButton->setGeometry(QRect(560, 300, 83, 29));
         widget_9 = new QWidget(MemberWidget);
         widget_9->setObjectName(QString::fromUtf8("widget_9"));
         widget_9->setGeometry(QRect(0, 0, 961, 61));
@@ -229,12 +267,21 @@ public:
         userNameLabel = new QLabel(widget_9);
         userNameLabel->setObjectName(QString::fromUtf8("userNameLabel"));
         userNameLabel->setGeometry(QRect(752, 20, 121, 20));
+        searchButton = new QPushButton(widget_9);
+        searchButton->setObjectName(QString::fromUtf8("searchButton"));
+        searchButton->setGeometry(QRect(490, 20, 83, 29));
         browsePushButton = new QPushButton(MemberWidget);
         browsePushButton->setObjectName(QString::fromUtf8("browsePushButton"));
-        browsePushButton->setGeometry(QRect(50, 90, 51, 29));
+        browsePushButton->setGeometry(QRect(50, 130, 81, 29));
+        browsePushButton->setFlat(true);
         yourBooksPushButton = new QPushButton(MemberWidget);
         yourBooksPushButton->setObjectName(QString::fromUtf8("yourBooksPushButton"));
-        yourBooksPushButton->setGeometry(QRect(50, 130, 83, 29));
+        yourBooksPushButton->setGeometry(QRect(50, 170, 83, 29));
+        yourBooksPushButton->setFlat(true);
+        browsePushButton_2 = new QPushButton(MemberWidget);
+        browsePushButton_2->setObjectName(QString::fromUtf8("browsePushButton_2"));
+        browsePushButton_2->setGeometry(QRect(50, 90, 51, 29));
+        browsePushButton_2->setFlat(true);
 
         retranslateUi(MemberWidget);
 
@@ -265,9 +312,16 @@ public:
         orwellButton->setText(QCoreApplication::translate("MemberWidget", "1984", nullptr));
         widget_4->setStyleSheet(QCoreApplication::translate("MemberWidget", "background-color: white\n"
 "", nullptr));
+        bookNameLabel->setText(QCoreApplication::translate("MemberWidget", "TextLabel", nullptr));
+        bookAuthorLabel->setText(QCoreApplication::translate("MemberWidget", "TextLabel", nullptr));
+        bookDescLabel->setText(QCoreApplication::translate("MemberWidget", "TextLabel", nullptr));
+        requestButton->setText(QCoreApplication::translate("MemberWidget", "Request", nullptr));
+        cancelButton->setText(QCoreApplication::translate("MemberWidget", "Cancel", nullptr));
         userNameLabel->setText(QCoreApplication::translate("MemberWidget", "TextLabel", nullptr));
-        browsePushButton->setText(QCoreApplication::translate("MemberWidget", "Browse", nullptr));
+        searchButton->setText(QCoreApplication::translate("MemberWidget", "search", nullptr));
+        browsePushButton->setText(QCoreApplication::translate("MemberWidget", "Browse All", nullptr));
         yourBooksPushButton->setText(QCoreApplication::translate("MemberWidget", "Your books", nullptr));
+        browsePushButton_2->setText(QCoreApplication::translate("MemberWidget", "Home", nullptr));
     } // retranslateUi
 
 };

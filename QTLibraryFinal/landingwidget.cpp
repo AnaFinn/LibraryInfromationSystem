@@ -34,6 +34,7 @@ void LandingWidget::signUpClicked()
 
 void LandingWidget::logInValidation()
 {
+    LibraryDataBase ld;
     if(ui->mailLineEdit->text().isEmpty() || ui->pswdLineEdit->text().isEmpty())
     {
         QMessageBox msgBox;
@@ -41,12 +42,20 @@ void LandingWidget::logInValidation()
         msgBox.exec();
         return;
     }
-    QString pass,name, email;int type=0;
+    QString pass,name, email;
+    int type=0;
     email=ui->mailLineEdit->text();
     pass=ui->pswdLineEdit->text();
     if(ui->memberRadioButton->isChecked())type=1;
     if(ui->adminRadiButton->isChecked())type=2;
 
+
     libraryDatabase->logInDataBase(name, email, pass, type);
+
+    qDebug()<<ld.getUsername();
+
+    //memWidget->setCurrentUsername(testname);
+
+    //qDebug()<<testname;
     emit memberLoggedIn();
 }
