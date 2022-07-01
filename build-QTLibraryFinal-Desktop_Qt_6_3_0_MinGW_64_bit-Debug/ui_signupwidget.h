@@ -57,9 +57,13 @@ public:
         if (SignUpWidget->objectName().isEmpty())
             SignUpWidget->setObjectName(QString::fromUtf8("SignUpWidget"));
         SignUpWidget->resize(960, 650);
+        SignUpWidget->setStyleSheet(QString::fromUtf8("font-family: Arial;\n"
+"\n"
+"color:black;\n"
+""));
         layoutWidget = new QWidget(SignUpWidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(100, 100, 790, 503));
+        layoutWidget->setGeometry(QRect(90, 80, 790, 503));
         horizontalLayout_4 = new QHBoxLayout(layoutWidget);
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -71,21 +75,37 @@ public:
         sizePolicy.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
         groupBox->setSizePolicy(sizePolicy);
         groupBox->setMinimumSize(QSize(400, 501));
+        groupBox->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-style: outset;\n"
+"    border-width: 0px;\n"
+"    border-radius: 16px;"));
         verticalLayout_3 = new QVBoxLayout(groupBox);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         headreLabel = new QLabel(groupBox);
         headreLabel->setObjectName(QString::fromUtf8("headreLabel"));
+        headreLabel->setStyleSheet(QString::fromUtf8("font: bold;\n"
+"color:#0F7C8A;\n"
+"font-family: Arial;\n"
+"font-size: 30px;"));
         headreLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_3->addWidget(headreLabel);
 
-        verticalSpacer_2 = new QSpacerItem(20, 60, QSizePolicy::Minimum, QSizePolicy::Minimum);
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
         verticalLayout_3->addItem(verticalSpacer_2);
 
         nameLineEdit = new QLineEdit(groupBox);
         nameLineEdit->setObjectName(QString::fromUtf8("nameLineEdit"));
         nameLineEdit->setMinimumSize(QSize(301, 41));
+        nameLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"color: black;\n"
+"background-color: #E6E6E6;\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#E6E6E6;;\n"
+"}"));
 
         verticalLayout_3->addWidget(nameLineEdit);
 
@@ -94,6 +114,14 @@ public:
         mailLineEdit = new QLineEdit(groupBox);
         mailLineEdit->setObjectName(QString::fromUtf8("mailLineEdit"));
         mailLineEdit->setMinimumSize(QSize(301, 41));
+        mailLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"color: black;\n"
+"background-color: #E6E6E6;\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#E6E6E6;;\n"
+"}"));
 
         verticalLayout->addWidget(mailLineEdit);
 
@@ -105,6 +133,14 @@ public:
         sizePolicy1.setHeightForWidth(pswdLineEdit->sizePolicy().hasHeightForWidth());
         pswdLineEdit->setSizePolicy(sizePolicy1);
         pswdLineEdit->setMinimumSize(QSize(301, 41));
+        pswdLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"color: black;\n"
+"background-color: #E6E6E6;\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#E6E6E6;;\n"
+"}"));
 
         verticalLayout->addWidget(pswdLineEdit);
 
@@ -113,6 +149,14 @@ public:
         sizePolicy1.setHeightForWidth(confirmPswdLineEdit->sizePolicy().hasHeightForWidth());
         confirmPswdLineEdit->setSizePolicy(sizePolicy1);
         confirmPswdLineEdit->setMinimumSize(QSize(301, 41));
+        confirmPswdLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"color: black;\n"
+"background-color: #E6E6E6;\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#E6E6E6;;\n"
+"}"));
 
         verticalLayout->addWidget(confirmPswdLineEdit);
 
@@ -137,13 +181,23 @@ public:
 
         verticalLayout_2->addLayout(horizontalLayout);
 
-        verticalSpacer_3 = new QSpacerItem(20, 60, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_3 = new QSpacerItem(20, 60, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
         verticalLayout_2->addItem(verticalSpacer_3);
 
         createAccountButton = new QPushButton(groupBox);
         createAccountButton->setObjectName(QString::fromUtf8("createAccountButton"));
         createAccountButton->setMinimumSize(QSize(301, 41));
+        createAccountButton->setStyleSheet(QString::fromUtf8("\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#D68243;;\n"
+"padding: 0 8 px;\n"
+"background:#D68243;\n"
+"font: bold 14px;\n"
+"color:white;\n"
+""));
 
         verticalLayout_2->addWidget(createAccountButton);
 
@@ -195,6 +249,11 @@ public:
         picLabel->setSizePolicy(sizePolicy2);
         picLabel->setMinimumSize(QSize(381, 501));
         picLabel->setMaximumSize(QSize(381, 501));
+        picLabel->setStyleSheet(QString::fromUtf8("\n"
+"border-style: outset;\n"
+"    border-width: 2px;\n"
+"border-color:white;\n"
+"    border-radius: 16px;"));
 
         horizontalLayout_4->addWidget(picLabel);
 
@@ -218,7 +277,7 @@ public:
         createAccountButton->setText(QCoreApplication::translate("SignUpWidget", "Creat an account", nullptr));
         label->setText(QCoreApplication::translate("SignUpWidget", "Already a member?", nullptr));
         logInButton->setText(QCoreApplication::translate("SignUpWidget", "Log In", nullptr));
-        picLabel->setText(QCoreApplication::translate("SignUpWidget", "TextLabel", nullptr));
+        picLabel->setText(QString());
     } // retranslateUi
 
 };

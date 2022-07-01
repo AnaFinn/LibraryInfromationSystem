@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QObject>
+#include <QDialog>
 #include <QMessageBox>
 #include <QCoreApplication>
 #include <QDebug>
@@ -11,6 +12,9 @@
 #include <QSqlDatabase>
 #include <QSqlQueryModel>
 #include "librarydatabase.h"
+#include "emaildialog.h"
+#include "reservationdialog.h"
+#include "accountdialog.h"
 
 
 
@@ -28,7 +32,8 @@ public:
 
 public slots:
 
-
+signals:
+    void logInMove();
 
 private slots:
     void on_browsePushButton_clicked();
@@ -41,12 +46,25 @@ private slots:
 
     void on_requestButton_clicked();
 
+    //void on_userNameLabel_linkActivated(const QString &link);
+
+    void on_accountSettingsButton_clicked();
+
+    void on_yourBooksPushButton_clicked();
+
+    void on_lesMisButton_clicked();
+
+    void on_blackTulipButton_clicked();
+
 private:
     Ui::MemberWidget *ui;
     //QString usernameCurrent;
 
 //QString usernameCurrent;
     LibraryDataBase librarydatabase;
+    EmailDialog emailDialog;
+    ReservationDialog resDialog;
+    AccountDialog accDialog;
 
 
 

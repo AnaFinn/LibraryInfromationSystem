@@ -10,6 +10,8 @@
 #include <QString>
 #include <QtSql>
 #include <QSqlDatabase>
+#include <QPalette>
+#include <QPixmap>
 #include "landingwidget.h"
 #include "librarydatabase.h"
 

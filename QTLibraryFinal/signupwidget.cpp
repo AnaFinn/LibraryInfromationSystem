@@ -6,6 +6,14 @@ SignUpWidget::SignUpWidget(QWidget *parent) :
     ui(new Ui::SignUpWidget)
 {
     ui->setupUi(this);
+    QPixmap pix1(":/picAssets/singLibraryPic.jpg");
+    int w = 800;
+    int h=900;
+
+    ui->picLabel->setPixmap(pix1.scaled(w,h,Qt::KeepAspectRatio));
+
+
+    ui->setupUi(this);
     ui->nameLineEdit->setPlaceholderText("Enter your full name");
     ui->mailLineEdit->setPlaceholderText("Enter your email addres");
     ui->pswdLineEdit->setPlaceholderText("Enter your password");
@@ -48,7 +56,7 @@ void SignUpWidget::signUpValidation()
     if(ui->adminRadiButton->isChecked())type=2;
 
     libraryDatabase->signUpDataBase(name,pass,email,type);
-    //emit signUpData(name,email,pass,type);
+    emit logInMove();
 
 }
 

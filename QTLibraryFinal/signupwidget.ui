@@ -13,11 +13,17 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">font-family: Arial;
+
+color:black;
+</string>
+  </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>100</y>
+     <x>90</x>
+     <y>80</y>
      <width>790</width>
      <height>503</height>
     </rect>
@@ -37,12 +43,24 @@
         <height>501</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;
+border-style: outset;
+    border-width: 0px;
+    border-radius: 16px;</string>
+      </property>
       <property name="title">
        <string/>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QLabel" name="headreLabel">
+         <property name="styleSheet">
+          <string notr="true">font: bold;
+color:#0F7C8A;
+font-family: Arial;
+font-size: 30px;</string>
+         </property>
          <property name="text">
           <string>Sign up</string>
          </property>
@@ -62,7 +80,7 @@
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>60</height>
+           <height>40</height>
           </size>
          </property>
         </spacer>
@@ -74,6 +92,16 @@
            <width>301</width>
            <height>41</height>
           </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+color: black;
+background-color: #E6E6E6;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+border-color:#E6E6E6;;
+}</string>
          </property>
          <property name="text">
           <string/>
@@ -89,6 +117,16 @@
              <width>301</width>
              <height>41</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+color: black;
+background-color: #E6E6E6;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+border-color:#E6E6E6;;
+}</string>
            </property>
            <property name="text">
             <string/>
@@ -109,6 +147,16 @@
              <height>41</height>
             </size>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+color: black;
+background-color: #E6E6E6;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+border-color:#E6E6E6;;
+}</string>
+           </property>
            <property name="text">
             <string/>
            </property>
@@ -127,6 +175,16 @@
              <width>301</width>
              <height>41</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+color: black;
+background-color: #E6E6E6;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+border-color:#E6E6E6;;
+}</string>
            </property>
            <property name="text">
             <string/>
@@ -171,6 +229,9 @@
              <property name="orientation">
               <enum>Qt::Vertical</enum>
              </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Minimum</enum>
+             </property>
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
@@ -186,6 +247,18 @@
                <width>301</width>
                <height>41</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+border-color:#D68243;;
+padding: 0 8 px;
+background:#D68243;
+font: bold 14px;
+color:white;
+</string>
              </property>
              <property name="text">
               <string>Creat an account</string>
@@ -279,8 +352,15 @@
         <height>501</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-style: outset;
+    border-width: 2px;
+border-color:white;
+    border-radius: 16px;</string>
+      </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
     </item>

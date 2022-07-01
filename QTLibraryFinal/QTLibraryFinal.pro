@@ -9,30 +9,39 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    bookinfowidget.cpp \
+    accountdialog.cpp \
+    emaildialog.cpp \
     landingwidget.cpp \
     librarydatabase.cpp \
     main.cpp \
     mainwindow.cpp \
     memberwidget.cpp \
+    reservationdialog.cpp \
     signupwidget.cpp
 
 HEADERS += \
-    bookinfowidget.h \
+    accountdialog.h \
+    emaildialog.h \
     landingwidget.h \
     librarydatabase.h \
     mainwindow.h \
     memberwidget.h \
+    reservationdialog.h \
     signupwidget.h
 
 FORMS += \
-    bookinfowidget.ui \
+    accountdialog.ui \
+    emaildialog.ui \
     landingwidget.ui \
     mainwindow.ui \
     memberwidget.ui \
+    reservationdialog.ui \
     signupwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Pics.qrc

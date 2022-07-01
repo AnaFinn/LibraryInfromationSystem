@@ -7,11 +7,17 @@
     <x>0</x>
     <y>0</y>
     <width>960</width>
-    <height>665</height>
+    <height>519</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:white;
+font-family: Arial;
+color:black;
+</string>
   </property>
   <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
@@ -19,7 +25,7 @@
      <x>210</x>
      <y>50</y>
      <width>691</width>
-     <height>621</height>
+     <height>630</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -454,118 +460,6 @@ border-color:blue;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>80</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_2" native="true">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>80</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_3" native="true">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>80</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_4" native="true">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>80</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string>background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_5" native="true">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>360</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_6" native="true">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>360</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_7" native="true">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>360</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_8" native="true">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>360</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white
-</string>
-    </property>
-   </widget>
    <widget class="QTableView" name="tableView">
     <property name="geometry">
      <rect>
@@ -574,6 +468,10 @@ border-color:blue;</string>
       <width>751</width>
       <height>601</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> selection-background-color: 
+qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0))</string>
     </property>
    </widget>
    <widget class="QWidget" name="bookInfoWidget" native="true">
@@ -588,188 +486,579 @@ border-color:blue;</string>
     <property name="styleSheet">
      <string notr="true">background-color:white;</string>
     </property>
-    <widget class="QWidget" name="widget_11" native="true">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
        <x>40</x>
        <y>30</y>
-       <width>211</width>
-       <height>301</height>
+       <width>581</width>
+       <height>261</height>
       </rect>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:black;</string>
-     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_11" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#0F7C8A;
+border-style: outset;
+    border-width: 0px;
+    border-radius: 16px;</string>
+        </property>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>70</y>
+           <width>161</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: bold;
+font-size:24px;
+color:#D68243;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Book cover&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;placeholder&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="bookNameLabel">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+font-size:32px;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bookAuthorLabel">
+          <property name="minimumSize">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1010001</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:24px;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="bookDescLabel">
+          <property name="styleSheet">
+           <string notr="true">font-size:16px;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </widget>
-    <widget class="QLabel" name="bookNameLabel">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>30</y>
-       <width>181</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="bookAuthorLabel">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>70</y>
-       <width>181</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="bookDescLabel">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>110</y>
-       <width>421</width>
-       <height>161</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="requestButton">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
+       <x>460</x>
        <y>300</y>
-       <width>83</width>
-       <height>29</height>
+       <width>171</width>
+       <height>42</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Request</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="cancelButton">
-     <property name="geometry">
-      <rect>
-       <x>560</x>
-       <y>300</y>
-       <width>83</width>
-       <height>29</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Cancel</string>
-     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="requestButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+background-color:#D68243;
+color:white;
+font:bold;
+</string>
+        </property>
+        <property name="text">
+         <string>Request</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color:#0F7C8A;
+background-color:white;
+color:#0F7C8A;
+font:bold;
+</string>
+        </property>
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
+   <widget class="QLabel" name="picLabel5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>80</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>121</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>80</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel4">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel6">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>360</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel7">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>360</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel8">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>360</y>
+      <width>120</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-style: inset;
+border-color:#0F7C8A;
+    border-width: 4px;
+    border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>picLabel6</zorder>
+   <zorder>picLabel7</zorder>
+   <zorder>picLabel8</zorder>
+   <zorder>picLabel4</zorder>
+   <zorder>picLabel2</zorder>
+   <zorder>picLabel3</zorder>
+   <zorder>picLabel5</zorder>
+   <zorder>picLabel1</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>hobbitButton</zorder>
+   <zorder>lesMisButton</zorder>
+   <zorder>blackTulipButton</zorder>
+   <zorder>warButton</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_14</zorder>
+   <zorder>lotrButton</zorder>
+   <zorder>duneButton</zorder>
+   <zorder>annaButton</zorder>
+   <zorder>orwellButton</zorder>
+   <zorder>tableView</zorder>
+   <zorder>bookInfoWidget</zorder>
   </widget>
   <widget class="QWidget" name="widget_9" native="true">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>-10</y>
      <width>961</width>
-     <height>61</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:white</string>
+    <string notr="true">background-color:#FFAA69;</string>
    </property>
    <widget class="QLineEdit" name="searchLineEdit">
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>10</y>
+      <y>20</y>
       <width>241</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue
+     <string notr="true">background-color: #D9D9D9;
+border-style: outset;
+border-width: 0px;
+border-radius: 20px;
 </string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="userNameLabel">
-    <property name="geometry">
-     <rect>
-      <x>752</x>
-      <y>20</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
     </property>
    </widget>
    <widget class="QPushButton" name="searchButton">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>440</x>
       <y>20</y>
-      <width>83</width>
-      <height>29</height>
+      <width>41</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>search</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Pics.qrc">
+      <normaloff>:/picAssets/search.jpg</normaloff>:/picAssets/search.jpg</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>761</x>
+      <y>20</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="accountSettingsButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="Pics.qrc">
+         <normaloff>:/picAssets/accountPic.png</normaloff>:/picAssets/accountPic.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="userNameLabel">
+       <property name="styleSheet">
+        <string notr="true">font:bold;
+color:white;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>userNameLabel</zorder>
+   <zorder>accountSettingsButton</zorder>
+   <zorder>searchLineEdit</zorder>
+   <zorder>searchButton</zorder>
   </widget>
-  <widget class="QPushButton" name="browsePushButton">
+  <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>130</y>
-     <width>81</width>
-     <height>29</height>
+     <x>0</x>
+     <y>0</y>
+     <width>961</width>
+     <height>700</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Browse All</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>98</width>
+      <height>104</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="browsePushButton_2">
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:bold;
+font-size: 16px;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="browsePushButton">
+       <property name="maximumSize">
+        <size>
+         <width>84</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:bold; font-size: 16px;</string>
+       </property>
+       <property name="text">
+        <string>Browse All</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="yourBooksPushButton">
+       <property name="maximumSize">
+        <size>
+         <width>89</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:bold; font-size: 16px;</string>
+       </property>
+       <property name="text">
+        <string>Your books</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>browsePushButton</zorder>
+    <zorder>browsePushButton_2</zorder>
+    <zorder>yourBooksPushButton</zorder>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="yourBooksPushButton">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>170</y>
-     <width>83</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Your books</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="browsePushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>90</y>
-     <width>51</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Home</string>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-  </widget>
+  <zorder>widget</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>widget_9</zorder>
+  <zorder>browsePushButton</zorder>
+  <zorder>yourBooksPushButton</zorder>
+  <zorder>browsePushButton_2</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="Pics.qrc"/>
+ </resources>
  <connections/>
 </ui>

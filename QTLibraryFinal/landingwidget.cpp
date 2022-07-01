@@ -6,6 +6,11 @@ LandingWidget::LandingWidget(QWidget *parent) :
     ui(new Ui::LandingWidget)
 {
     ui->setupUi(this);
+    QPixmap pix1(":/picAssets/singLibraryPic.jpg");
+    int w = 800;
+    int h=900;
+
+    ui->picLabel->setPixmap(pix1.scaled(w,h,Qt::KeepAspectRatio));
 
 
     ui->mailLineEdit->setPlaceholderText("Enter your email addres");
@@ -50,12 +55,19 @@ void LandingWidget::logInValidation()
     if(ui->adminRadiButton->isChecked())type=2;
 
 
-    libraryDatabase->logInDataBase(name, email, pass, type);
+    if(libraryDatabase->logInDataBase(name, email, pass, type)==true)
+    {
+        emit memberLoggedIn();
+    }
+    else{
+        QMessageBox msgBox;
+        msgBox.setText("Please enter a correct username\npassword. Note that both\nfields may be case-sensitive");
+        msgBox.exec();
+        return;
+    }
 
     qDebug()<<ld.getUsername();
 
-    //memWidget->setCurrentUsername(testname);
 
-    //qDebug()<<testname;
-    emit memberLoggedIn();
+
 }

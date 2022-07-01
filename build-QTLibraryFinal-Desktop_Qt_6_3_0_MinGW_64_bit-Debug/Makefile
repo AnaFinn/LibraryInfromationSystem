@@ -336,7 +336,8 @@ Makefile: ../QTLibraryFinal/QTLibraryFinal.pro C:/Qt/6.3.0/mingw_64/mkspecs/win3
 		C:/Qt/6.3.0/mingw_64/lib/Qt6Sql.prl \
 		C:/Qt/6.3.0/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.3.0/mingw_64/lib/Qt6EntryPoint.prl \
-		C:/Qt/6.3.0/mingw_64/mkspecs/features/build_pass.prf
+		C:/Qt/6.3.0/mingw_64/mkspecs/features/build_pass.prf \
+		../QTLibraryFinal/Pics.qrc
 	$(QMAKE) -o Makefile ..\QTLibraryFinal\QTLibraryFinal.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/6.3.0/mingw_64/mkspecs/features/spec_pre.prf:
 C:/Qt/6.3.0/mingw_64/mkspecs/features/device_config.prf:
@@ -605,6 +606,7 @@ C:/Qt/6.3.0/mingw_64/lib/Qt6Sql.prl:
 C:/Qt/6.3.0/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.3.0/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/6.3.0/mingw_64/mkspecs/features/build_pass.prf:
+../QTLibraryFinal/Pics.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\QTLibraryFinal\QTLibraryFinal.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

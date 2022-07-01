@@ -10,7 +10,11 @@
 #include <QString>
 #include <QtSql>
 #include <QSqlDatabase>
+#include <QDialog>
+#include <QPalette>
+#include <QPixmap>
 #include "librarydatabase.h"
+
 
 
 
@@ -43,6 +47,7 @@ private slots:
 private:
     Ui::LandingWidget *ui;
     LibraryDataBase *libraryDatabase;
+
 
 
 

@@ -58,6 +58,10 @@ public:
             LandingWidget->setObjectName(QString::fromUtf8("LandingWidget"));
         LandingWidget->resize(960, 650);
         LandingWidget->setMinimumSize(QSize(960, 570));
+        LandingWidget->setStyleSheet(QString::fromUtf8("font-family: Arial;\n"
+"\n"
+"color:black;\n"
+""));
         layoutWidget = new QWidget(LandingWidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
         layoutWidget->setGeometry(QRect(70, 80, 790, 503));
@@ -66,16 +70,25 @@ public:
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
         groupBox = new QGroupBox(layoutWidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setEnabled(true);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
         groupBox->setSizePolicy(sizePolicy);
         groupBox->setMinimumSize(QSize(400, 501));
+        groupBox->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-style: outset;\n"
+"    border-width: 0px;\n"
+"    border-radius: 16px;"));
         verticalLayout_3 = new QVBoxLayout(groupBox);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         headreLabel = new QLabel(groupBox);
         headreLabel->setObjectName(QString::fromUtf8("headreLabel"));
+        headreLabel->setStyleSheet(QString::fromUtf8("font: bold;\n"
+"color:#0F7C8A;\n"
+"font-family: Arial;\n"
+"font-size: 30px;"));
         headreLabel->setAlignment(Qt::AlignCenter);
 
         verticalLayout_3->addWidget(headreLabel);
@@ -89,10 +102,18 @@ public:
         mailLineEdit = new QLineEdit(groupBox);
         mailLineEdit->setObjectName(QString::fromUtf8("mailLineEdit"));
         mailLineEdit->setMinimumSize(QSize(301, 41));
+        mailLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"color: black;\n"
+"background-color: #E6E6E6;\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#E6E6E6;;\n"
+"}"));
 
         verticalLayout->addWidget(mailLineEdit);
 
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer = new QSpacerItem(20, 30, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
         verticalLayout->addItem(verticalSpacer);
 
@@ -104,6 +125,14 @@ public:
         sizePolicy1.setHeightForWidth(pswdLineEdit->sizePolicy().hasHeightForWidth());
         pswdLineEdit->setSizePolicy(sizePolicy1);
         pswdLineEdit->setMinimumSize(QSize(301, 41));
+        pswdLineEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"color: black;\n"
+"background-color: #E6E6E6;\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#E6E6E6;;\n"
+"}"));
 
         verticalLayout->addWidget(pswdLineEdit);
 
@@ -135,13 +164,23 @@ public:
 
         verticalLayout_2->addLayout(horizontalLayout);
 
-        verticalSpacer_3 = new QSpacerItem(20, 60, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        verticalSpacer_3 = new QSpacerItem(20, 60, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
         verticalLayout_2->addItem(verticalSpacer_3);
 
         loginButton = new QPushButton(groupBox);
         loginButton->setObjectName(QString::fromUtf8("loginButton"));
         loginButton->setMinimumSize(QSize(301, 41));
+        loginButton->setStyleSheet(QString::fromUtf8("\n"
+"border-style: outset;\n"
+"border-width: 0px;\n"
+"border-radius: 10px;\n"
+"border-color:#D68243;;\n"
+"padding: 0 8 px;\n"
+"background:#D68243;\n"
+"font: bold 14px;\n"
+"color:white;\n"
+""));
 
         verticalLayout_2->addWidget(loginButton);
 
@@ -193,9 +232,16 @@ public:
         picLabel->setSizePolicy(sizePolicy2);
         picLabel->setMinimumSize(QSize(381, 501));
         picLabel->setMaximumSize(QSize(381, 501));
+        picLabel->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-style: outset;\n"
+"    border-width: 2px;\n"
+"border-color:white;\n"
+"    border-radius: 16px;"));
 
         horizontalLayout_4->addWidget(picLabel);
 
+        groupBox->raise();
+        picLabel->raise();
 
         retranslateUi(LandingWidget);
 
@@ -215,7 +261,7 @@ public:
         loginButton->setText(QCoreApplication::translate("LandingWidget", "Login", nullptr));
         label->setText(QCoreApplication::translate("LandingWidget", "Don't have an account?", nullptr));
         signUpButton->setText(QCoreApplication::translate("LandingWidget", "Sign Up!", nullptr));
-        picLabel->setText(QCoreApplication::translate("LandingWidget", "TextLabel", nullptr));
+        picLabel->setText(QString());
     } // retranslateUi
 
 };

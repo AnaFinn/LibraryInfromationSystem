@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>picAssets/1984.jpg</file>
+        <file>picAssets/2105.q706.009.S.m005.c10.online library illustration.jpg</file>
+        <file>picAssets/accountPic.png</file>
+        <file>picAssets/annaKarenina.jpg</file>
+        <file>picAssets/background.png</file>
+        <file>picAssets/blackTulip.jpg</file>
+        <file>picAssets/dune.png</file>
+        <file>picAssets/hobbit.jpg</file>
+        <file>picAssets/lesMiserables.jpg</file>
+        <file>picAssets/lotr.jpg</file>
+        <file>picAssets/singLibraryPic.jpg</file>
+        <file>picAssets/war-and-peace.png</file>
+        <file>picAssets/search.jpg</file>
+    </qresource>
+</RCC>
